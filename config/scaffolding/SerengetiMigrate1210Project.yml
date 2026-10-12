@@ -7,7 +7,7 @@ packages:
   gitUrl: https://github.com/ArtiKhareNew
   gitUsername: ArtiKhareNew
   gitBranch: main
-- name: addpublicservice
+- name: AddPublicService
   gitServerName: srcCtrl_gitlab_shared_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
