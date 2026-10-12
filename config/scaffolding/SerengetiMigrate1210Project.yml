@@ -8,10 +8,26 @@ packages:
   gitUsername: ArtiKhareNew
   gitBranch: main
 - name: AddPublicService
+  version: "6.0"
   gitServerName: srcCtrl_gitlab_shared_Arti
   gitUrl: https://gitlab.com/ArtiKhareGitlab
   gitUsername: ArtiKhareGitlab
   gitBranch: master
+services:
+- serviceName: project.serengetimigrate1210.integrations:gitlabfs
+  packages:
+  - name: SerengetiMigrate1210Project
+    version: "1.0"
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: AddPublicService:addpublicService
+  packages:
+  - name: AddPublicService
+    version: "6.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1222
 configurationVariables:
   jdbcfunc.SAPTxStore.failFastMode: false
   jdbcfunc.SAPTxStore.connPoolAlias: SAP TxStore Pool
